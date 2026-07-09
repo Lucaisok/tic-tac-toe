@@ -20,9 +20,19 @@ def displayBoard(board: list):
     print("---------")
     print(display[6] + " | " + display[7] + " | " + display[8])
 
+def assign_players():
+    player_one_name = input("Hi, player one. What is your name?")
+    player_two_name = input("Hi, player two. What is your name?") 
+    print(player_one_name)
+    print(player_two_name)
+    player_one_symbol = input(f"Hi {player_one_name}, choose a symbol: 'X' or 'O'")
+    player_two_symbol = input(f"Hi {player_two_name} player two, choose a symbol: 'X' or 'O'")
+    print(f"Hi {player_one_name}, your symbol is {player_one_symbol}")
+    print(f"Hi {player_two_name}, your symbol is {player_two_symbol}")
+
 # Tic-tac-toe game
 if __name__ == "__main__":
     # Start a new round of Tic-tac-toe
     print("Welcome to a new round of Tic-Tac-Toe!")
     displayBoard(board)
-
+    assign_players()
